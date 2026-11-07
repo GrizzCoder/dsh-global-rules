@@ -6,6 +6,8 @@ DeepSeek Harness (DSH) 设置界面的「全局规则」可视化编辑插件。
 
 直接在 Web 设置界面的左侧栏管理您的用户级全局指令文件 `$DSH_HOME/AGENTS.md`（默认 `~/.dsh/AGENTS.md`），免去手动翻找系统隐藏目录的繁琐操作。
 
+![全局规则界面预览](assets/preview.png)
+
 ---
 
 ## 核心特性
@@ -48,6 +50,8 @@ dsh plugin --profile desktop add ./dsh-global-rules
 
 ```text
 dsh-global-rules/
+├── assets/               # 预览截图等静态资源
+│   └── preview.png
 ├── cordis.patch.yml      # 插件补丁声明
 ├── icon.svg              # 插件图标
 ├── lib/

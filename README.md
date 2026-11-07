@@ -6,6 +6,8 @@ A DeepSeek Harness (DSH) plugin for visual editing of the user-level global rule
 
 Directly manage your user-global instruction file `$DSH_HOME/AGENTS.md` (default `~/.dsh/AGENTS.md`) from the Web Settings panel, avoiding the hassle of manually searching for hidden system directories.
 
+![Global Rules Preview](assets/preview.png)
+
 ---
 
 ## Features
@@ -45,6 +47,8 @@ After installation, refresh the web page and open **Settings → Global rules** 
 
 ```text
 dsh-global-rules/
+├── assets/               # Screenshots and assets
+│   └── preview.png
 ├── cordis.patch.yml      # Plugin patch declaration
 ├── icon.svg              # Plugin icon
 ├── lib/
