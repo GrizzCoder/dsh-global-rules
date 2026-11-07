@@ -1,10 +1,10 @@
-﻿# dsh-global-rules
+# dsh-global-rules
 
 [English](README.md) | 中文
 
 DeepSeek Harness (DSH) 设置界面的「全局规则」可视化编辑插件。
 
-直接在 Web 设置界面的左侧栏管理您的用户级全局指令文件 $DSH_HOME/AGENTS.md（默认 ~/.dsh/AGENTS.md），免去手动翻找系统隐藏目录的繁琐操作。
+直接在 Web 设置界面的左侧栏管理您的用户级全局指令文件 `$DSH_HOME/AGENTS.md`（默认 `~/.dsh/AGENTS.md`），免去手动翻找系统隐藏目录的繁琐操作。
 
 ---
 
@@ -27,20 +27,18 @@ DeepSeek Harness (DSH) 设置界面的「全局规则」可视化编辑插件。
 
 在终端中执行：
 
-`sh
+```sh
 dsh plugin --profile desktop add github:GrizzCoder/dsh-global-rules
-`
-
-*(如果使用的不是桌面版 profile，可将 desktop 替换为您对应的 profile 名称，如 web)*
+```
 
 ### 方式二：本地开发安装
 
 克隆本仓库到本地后，在对应工作区目录执行：
 
-`sh
+```sh
 git clone https://github.com/GrizzCoder/dsh-global-rules.git
 dsh plugin --profile desktop add ./dsh-global-rules
-`
+```
 
 安装完成后刷新 Web 页面，打开左下角 **设置 → 全局规则** 即可使用。
 
@@ -48,7 +46,7 @@ dsh plugin --profile desktop add ./dsh-global-rules
 
 ## 项目结构
 
-`
+```text
 dsh-global-rules/
 ├── cordis.patch.yml      # 插件补丁声明
 ├── icon.svg              # 插件图标
@@ -56,7 +54,7 @@ dsh-global-rules/
 │   ├── index.js          # Host 端服务：文件读写与系统文件管理器调用
 │   └── client.js         # Client 端界面：设置页表单与交互组件
 └── package.json
-`
+```
 
 ---
 

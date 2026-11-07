@@ -1,10 +1,10 @@
-﻿# dsh-global-rules
+# dsh-global-rules
 
 English | [中文](README.zh-CN.md)
 
 A DeepSeek Harness (DSH) plugin for visual editing of the user-level global rules file.
 
-Directly manage your user-global instruction file $DSH_HOME/AGENTS.md (default ~/.dsh/AGENTS.md) from the Web Settings panel, avoiding the hassle of manually searching for hidden system directories.
+Directly manage your user-global instruction file `$DSH_HOME/AGENTS.md` (default `~/.dsh/AGENTS.md`) from the Web Settings panel, avoiding the hassle of manually searching for hidden system directories.
 
 ---
 
@@ -24,20 +24,18 @@ Directly manage your user-global instruction file $DSH_HOME/AGENTS.md (default ~
 
 Execute in your terminal:
 
-`sh
+```sh
 dsh plugin --profile desktop add github:GrizzCoder/dsh-global-rules
-`
-
-*(If you are not using the desktop profile, replace desktop with your actual profile name, e.g., web)*
+```
 
 ### Method 2: Local Development Install
 
 Clone this repository and install it in your workspace:
 
-`sh
+```sh
 git clone https://github.com/GrizzCoder/dsh-global-rules.git
 dsh plugin --profile desktop add ./dsh-global-rules
-`
+```
 
 After installation, refresh the web page and open **Settings → Global rules** to get started.
 
@@ -45,15 +43,15 @@ After installation, refresh the web page and open **Settings → Global rules** 
 
 ## Project structure
 
-`
+```text
 dsh-global-rules/
 ├── cordis.patch.yml      # Plugin patch declaration
 ├── icon.svg              # Plugin icon
 ├── lib/
 │   ├── index.js          # Host side: File I/O and File Manager calls
-│   └── client.js         # Client side: Settings panel UI and interactions
+│   └── client.js         # Client side: Settings panel UI
 └── package.json
-`
+```
 
 ---
 
